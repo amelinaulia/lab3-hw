@@ -17,29 +17,21 @@
 ### Блок схема
 ![Блок схема алгоритма](lab3.drawio.png)
 ## 2. Реализация программы:
+		#include <stdio.h>
+		#include <locale.h>
 
-      #include <stdio.h>
-      #include <locale.h>
-
-      int main() {
-
-	      setlocale(LC_CTYPE, "");
-
-	      float area, cost;
-
-		  float price = 500;
-	  	  float length = 3;
-	  	  float width = 0.8;
-
-	      area = width * length;
-	      cost = area * price;
-
-	      printf("Стоимость 1 кв метра: %.0f рублей\n", price);
-	      printf("Ширина ткани: %.1f м., Длинна ткани: %.0f м.\n", width, length);
-	      printf("Площадь ткани: %.1f кв.м.\n", area);
-   	   printf("Стоимость всей ткани: %.0f рублей\n", cost);
-
-      }
+		int main(){
+		setlocale(LC_ALL, "");
+		float m, t, s, result;
+		printf("Введите количество минут, пройдённые поездом: ");
+		scanf_s("%f", &m);
+		printf("Введите количество столбов, пройдённые поездом: ");
+		scanf_s("%f", &t); 
+		printf("Введите расстояние между столбами: ");
+		scanf_s("%f", &s);
+		result = (t * s) / m;
+		printf("скорость поезда: %f", result);
+		}
 ## 3. Результат работы программы
 ![Результат работы программы](image.png)
 ## 4. Информация о разработчике
