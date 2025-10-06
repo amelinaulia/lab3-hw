@@ -24,11 +24,11 @@
 		setlocale(LC_ALL, "");
 		float m, t, s, result;
 		printf("Введите количество минут, пройдённые поездом: ");
-		scanf_s("%f", &m);
+		scanf("%f", &m);
 		printf("Введите количество столбов, пройдённые поездом: ");
-		scanf_s("%f", &t); 
+		scanf("%f", &t); 
 		printf("Введите расстояние между столбами: ");
-		scanf_s("%f", &s);
+		scanf("%f", &s);
 		result = (t * s) / m;
 		printf("скорость поезда: %f", result);
 		}
